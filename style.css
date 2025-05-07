@@ -1,0 +1,227 @@
+/* Resetando alguns estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cor de fundo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container centralizado */
+.container {
+    width: 90%;
+    max-width: 1200px; /* Limite de largura */
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(to right, #2c6b34, #57a773); /* Gradiente de verde */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 3rem; /* Tamanho de fonte maior */
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.25rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.cta-btn {
+    padding: 12px 24px;
+    background-color: #ff9c42;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Para permitir margens */
+}
+
+.cta-btn:hover {
+    background-color: #e87e2f;
+}
+
+/* Seções */
+section {
+    padding: 40px 20px;
+    text-align: center;
+    margin: 30px 0;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Fundo das seções */
+#conexao {
+    background: #e8f3e3;
+}
+
+#importancia {
+    background: #f0f0f0;
+}
+
+#como-conexao {
+    background: #f9f9f9;
+}
+
+#reflexao {
+    background: #e8f3e3;
+}
+
+/* Estilos das listas na seção "Como a Conexão é Feita" */
+#como-conexao ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+#como-conexao li {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
+
+#como-conexao strong {
+    font-weight: bold;
+}
+
+/* Estilos de animações */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+}
+
+[data-aos="fade-left"] {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+[data-aos="fade-left"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+[data-aos="fade-right"] {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+[data-aos="fade-right"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Estilo das imagens nas seções */
+.section-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.section-image:hover {
+    transform: scale(1.05); /* Efeito de zoom */
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem; /* Tamanho de fonte menor */
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    .cta-btn {
+        width: 100%;
+        padding: 14px 0;
+        font-size: 1.1rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .section-image {
+        max-width: 100%;
+    }
+
+    #como-conexao ul {
+        text-align: center;
+    }
+}
+
+/* Para telas menores que 480px */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .cta-btn {
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Para telas muito grandes (ex: desktops com mais de 1200px de largura) */
+@media (min-width: 1200px) {
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    header p {
+        font-size: 1.5rem;
+    }
+
+    .cta-btn {
+        font-size: 1.3rem;
+    }
+
+    section h2 {
+        font-size: 2.5rem;
+    }
+
+    section p {
+        font-size: 1.2rem;
+    }
+}

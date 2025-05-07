@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festejando a Conexão Campo-Cidade</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Adicionando o CSS do AOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1 data-aos="fade-down">Festejando a Conexão Campo-Cidade</h1>
+            <p data-aos="fade-up">Entenda como o campo e a cidade se interligam e se influenciam mutuamente.</p>
+            <a href="#conexao" class="cta-btn" data-aos="fade-left">Saiba Mais</a>
+        </div>
+    </header>
+
+    <!-- Seção O que é a Conexão Campo-Cidade -->
+    <section id="conexao" data-aos="fade-up">
+        <div class="container">
+            <h2>O que é a Conexão Campo-Cidade?</h2>
+            <p>A conexão campo-cidade refere-se à interdependência entre as zonas urbanas e rurais, onde ambos se beneficiam e influenciam. O campo oferece recursos essenciais, enquanto a cidade oferece infraestrutura e consumo.</p>
+            <!-- Imagem ilustrativa -->
+            <img src="campo-cidade.jpg.png" alt="Conexão Campo-Cidade" class="section-image" data-aos="fade-up">
+        </div>
+    </section>
+
+    <!-- Seção Importância da Conexão -->
+    <section id="importancia" data-aos="fade-right">
+        <div class="container">
+            <h2>Importância da Conexão</h2>
+            <p>Esta relação é crucial para o crescimento econômico e o equilíbrio social. Ela fortalece a economia e proporciona uma troca cultural que beneficia a sociedade como um todo.</p>
+            <!-- Imagem ilustrativa -->
+            <img src="importância.jpg.png" alt="Importância da Conexão" class="section-image" data-aos="fade-right">
+        </div>
+    </section>
+
+    <!-- Seção Como a Conexão é Feita -->
+    <section id="como-conexao" data-aos="fade-left">
+        <div class="container">
+            <h2>Como a Conexão é Feita?</h2>
+            <ul>
+                <li><strong>Produtos agrícolas:</strong> O campo fornece alimentos e matérias-primas, essenciais para as cidades.</li>
+                <li><strong>Cultura:</strong> A música, arte e tradições do campo enriquecem a vida urbana.</li>
+                <li><strong>Comércio:</strong> A cidade consome os produtos do campo, promovendo o intercâmbio entre ambos.</li>
+            </ul>
+            <!-- Imagem ilustrativa -->
+            <img src="comércio.jpg.png" alt="Troca Comércio Campo-Cidade" class="section-image" data-aos="fade-left">
+        </div>
+    </section>
+
+    <!-- Seção Reflexão Final -->
+    <section id="reflexao" data-aos="fade-up">
+        <div class="container">
+            <h2>Reflexão Final</h2>
+            <p>Como podemos valorizar ainda mais essa conexão? Ao refletirmos sobre a relação entre o campo e a cidade, percebemos que ambos são interdependentes: o campo abastece a cidade com alimentos e recursos naturais, enquanto a cidade oferece tecnologias, serviços e mercados que impulsionam o desenvolvimento rural. Festejar essa conexão é reconhecer a importância de cada um e promover o respeito, a cooperação e o diálogo entre esses espaços. Somente assim poderemos construir um futuro mais equilibrado, sustentável e justo para todos</p>
+        </div>
+    </section>
+
+    
+
+   
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> <!-- Biblioteca AOS -->
+    <script>
+        // Inicialização do AOS (animações de scroll)
+        AOS.init({
+            duration: 1000, // Duração das animações
+            once: true,     // Anima apenas uma vez
+        });
+
+        // Scroll suave para links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+      
+    </script>
+</body>
+</html>
